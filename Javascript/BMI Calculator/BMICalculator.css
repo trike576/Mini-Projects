@@ -1,0 +1,134 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #0F172A;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 5rem auto;
+    width: min(90%, 500px);
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #E2E8F0;
+    font-weight: 700;
+}
+
+.info {
+    font-size: 1rem;
+    color: #94A3B8;
+    font-weight: 300;
+}
+
+.calculator {
+    margin: 5rem auto;
+    border: 2px solid #334155;
+    width: min(90%, 400px);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(34, 211, 238, 0.08);
+}
+
+.calculator:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+input {
+    border: 1px solid #334155;
+    cursor: text;
+    padding: 0.8rem 1rem;
+}
+
+input::placeholder {
+    color: #64748B;
+    border-radius: 0.8rem;
+}
+
+.weightInput,
+.heightInput {
+    display: block;
+    margin: 1rem auto;
+    color: #CBD5E1;
+    background-color: #1A2438;
+    width: 80%;
+    height: 3rem;
+    border-radius: 0.8rem;
+}
+
+.weightInput:focus,
+.heightInput:focus {
+    outline: none;
+    border: 2px solid #22D3EE;
+    box-shadow:
+        0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.weightInput:hover,
+.heightInput:hover {
+    border-color: #22D3EE;
+}
+
+.calculateBMI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 3rem auto;
+    color: #F8FAFC;
+    background-color: #8B5CF6;
+    width: 70%;
+    height: 3rem;
+    border-radius: 0.8rem;
+}
+
+.calculateBMI:hover {
+    transform: scale(1.05);
+    background-color: #7C3AED;
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+.calculateBMI:active {
+    transform: scale(0.95);
+}
+
+.resultText{
+
+    color: #22D3EE;
+
+    text-align: center;
+
+    margin-top: 1rem;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+}
