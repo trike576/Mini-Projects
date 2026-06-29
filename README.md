@@ -10,3 +10,4 @@ Javascript Mini Projects:
 React.js Mini Projects:
 1. Hero Registry
 2. Blood Donor Registry
+3. Sound Board
